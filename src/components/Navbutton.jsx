@@ -1,7 +1,6 @@
-import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { useNavigate } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, } from "react";
 export default function Navbutton(params) {
     const navigate = useNavigate();
     const textAnimationRef = useRef();
@@ -117,7 +116,7 @@ export default function Navbutton(params) {
                 });
             }
         }
-    }, []);
+    }, [navigate,  textAnimationRef,]);
 
     useEffect(() => {
         if (parthree.current && parfour.current) {
@@ -129,10 +128,8 @@ export default function Navbutton(params) {
 
             let textanimation = textAnimationRefone.current;
             let image1 = imageone.current;
-
             let top = 120;
             let left = 100;
-            
             if (textanimation) {
                 textanimation.addEventListener('mouseenter', () => {
                    
@@ -148,7 +145,7 @@ export default function Navbutton(params) {
                 });
             }
         }
-    }, []);
+    }, [navigate,  textAnimationRefone, ]);
     useEffect(() => {
         if (parthree.current && parfour.current) {
             wrapTextInSpans(parfive.current);
@@ -178,7 +175,7 @@ export default function Navbutton(params) {
                 });
             }
         }
-    }, []);
+    }, [navigate,  textAnimationReftwo]);
     useEffect(() => {
         if (parseven.current && pareight.current) {
             wrapTextInSpans(parseven.current);
@@ -205,7 +202,7 @@ export default function Navbutton(params) {
                 });
             }
         }
-    }, []);
+    }, [navigate,  textAnimationRefthree]);
     useEffect(() => {
             gsap.from('.leftnavon', {
                 y: 800,

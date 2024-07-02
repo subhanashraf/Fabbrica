@@ -118,10 +118,6 @@ export default function Pageconter(params) {
             </>
         )
     }
-    const customVariant = {
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
-      };
 
     return (
         <>
@@ -140,7 +136,7 @@ export default function Pageconter(params) {
                     {startscroll ? <button className='w-28 h-10 mt-2 overflow-hidden mainbutton'>
                         <div className='bg-red-700 w-full h-full py-2 text-white buttonpartone '>consulter</div>
                         <div className='bg-black w-full h-full py-2 text-white buttonparttwo '>consulter</div>
-                    </button> : <div className=""><NavLink to="https://www.instagram.com/lafabbricaparis"><img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6  " src="./image/image-removebg-preview (2).png" alt="image not load" /></NavLink> </div>}
+                    </button> : <div className=""><NavLink to="https://www.instagram.com/lafabbricaparis"><img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6  " src="https://raw.githubusercontent.com/subhanashraf/Fabbrica-website/main/public/image/image-removebg-preview%20(2).png" alt="image not load" /></NavLink> </div>}
                 </header>{/*header complete  */}
                 <div className=" leftside  w-full sm:w-1/2 block sm:inline-block bg-customBlack  h-1/2 sm:h-screen sm:absolure " >
                     <motion.div   initial={{ opacity: 0, y: 2 }}  whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay:0.5 } }} className='py-14 sm:py-40 md:mt-40   text-white text-center text-3xl  '>

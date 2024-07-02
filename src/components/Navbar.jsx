@@ -115,7 +115,7 @@ export default function Navbar(params) {
                         {menuVisible ? navbarbuttonparttwo() : navbarbuttonpartone()}
                     </button>
                     <NavLink to="/"> <h1 className="text-lg md:text-xl lg-text-2xl mt-6 ">Fabbrica</h1></NavLink>
-                    <div className=""><NavLink to="https://www.instagram.com/lafabbricaparis"><img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6 " src="./image/image-removebg-preview (2).png" alt="image not load" /></NavLink> </div>
+                    <div className=""><NavLink to="https://www.instagram.com/lafabbricaparis"><img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6 " src="https://raw.githubusercontent.com/subhanashraf/Fabbrica-website/main/public/image/image-removebg-preview%20(2).png" alt="image not load" /></NavLink> </div>
                 </header>
                 <div className=" leftside w-full sm:w-1/2 sm:inline-block bg-cover   h-1/2 sm:h-screen sm:relative " style={{ backgroundImage: 'url(https://fabbricagroup.fr/wp-content/uploads/2022/07/Landing_01@2x.webp)' }}> </div>
                 <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }} className="sm:inline-block z-10 text-white text-3xl absolute top-[48%]  sm:left-[46%] sm:bg-transparent bg-black sm:h-0 h-20 sm:w-0 w-full text-center "> BeLLo.<br />&Buonoto.</motion.h1>

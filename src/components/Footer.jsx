@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-export default function Footer(params) {
+export default function Footer() {
     return (
         <>
             
             <div className="w-full h-1/2 bg-black  pt-20 text-white md:flex flex-wrap text-center  md:px-20 lg:px-40">
                 <div className="w-full md:w-1/4 h-1/6  mx-auto md:mx-0">
-                    <motion.img   initial={{ opacity: 0, y: 40 }}  whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5,  delay:0.1 } }}  className=" mx-auto md:mb-8 " src="./image/Screenshot 2024-04-22 123101.png" alt="logo" />
+                    <img    className=" mx-auto md:mb-8 " src="https://raw.githubusercontent.com/subhanashraf/Fabbrica-website/main/public/image/Screenshot%202024-04-22%20123101.png" alt="logo" />
                 </div>
                 <div className="w-full md:w-1/4 h-1/6  mx-auto md:mx-0">
                     <motion.h4   initial={{ opacity: 0, y: 40 }}  whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay:0.1 } }}  className=" decoration-4 font-bold mb-4 ">RESTAURANTS</motion.h4>
