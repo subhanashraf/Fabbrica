@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Fabbrica/static/css/main.6423af4e.css",
+    "main.js": "/Fabbrica/static/js/main.a7ee1488.js",
+    "static/js/811.82817909.chunk.js": "/Fabbrica/static/js/811.82817909.chunk.js",
+    "index.html": "/Fabbrica/index.html",
+    "main.6423af4e.css.map": "/Fabbrica/static/css/main.6423af4e.css.map",
+    "main.a7ee1488.js.map": "/Fabbrica/static/js/main.a7ee1488.js.map",
+    "811.82817909.chunk.js.map": "/Fabbrica/static/js/811.82817909.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6423af4e.css",
+    "static/js/main.a7ee1488.js"
+  ]
+}
