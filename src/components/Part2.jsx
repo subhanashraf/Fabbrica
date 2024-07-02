@@ -150,7 +150,7 @@ export default function Part2() {
             mouseleave(maindivimage, maindivimageone, maindivimagetwo, paraoneSpans, paratwoSpans)
         });
 
-    }, [textAnimationRef]);
+    }, [textAnimationRef,navigate]);
 
     useEffect(() => {
 
@@ -187,7 +187,7 @@ export default function Part2() {
 
         });
 
-    }, [textAnimationRefone]);
+    }, [textAnimationRefone,navigate]);
     useEffect(() => {
 
         // Wrap text in spans for both paraone and partwo
@@ -221,7 +221,7 @@ export default function Part2() {
 
         });
 
-    }, [textAnimationReftwo]);
+    }, [textAnimationReftwo,navigate]);
     useEffect(() => {
 
 
@@ -255,7 +255,7 @@ export default function Part2() {
 
         });
 
-    }, [textAnimationRefthree]);
+    }, [textAnimationRefthree,navigate]);
 
     return (
         <>

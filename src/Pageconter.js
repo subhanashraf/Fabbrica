@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Navbutton from './components/Navbutton';
-export default function Pageconter(params) {
+export default function Pageconter(params, { imagealt = "image not found" }) {
     const navbar = useRef();
 
     const [menuVisible, setMenuVisible] = useState(false);
@@ -136,7 +136,7 @@ export default function Pageconter(params) {
                     {startscroll ? <button className='w-28 h-10 mt-2 overflow-hidden mainbutton'>
                         <div className='bg-red-700 w-full h-full py-2 text-white buttonpartone '>consulter</div>
                         <div className='bg-black w-full h-full py-2 text-white buttonparttwo '>consulter</div>
-                    </button> : <div className=""><NavLink to="https://www.instagram.com/lafabbricaparis"><img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6  " src="https://raw.githubusercontent.com/subhanashraf/Fabbrica-website/main/public/image/image-removebg-preview%20(2).png" alt="image not load" /></NavLink> </div>}
+                    </button> : <div ><NavLink to="https://www.instagram.com/lafabbricaparis"> <img className="w-6 h-6 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-6  " src="https://raw.githubusercontent.com/subhanashraf/Fabbrica-website/main/public/image/image-removebg-preview%20(2).png" alt={imagealt} /></NavLink> </div>}
                 </header>{/*header complete  */}
                 <div className=" leftside  w-full sm:w-1/2 block sm:inline-block bg-customBlack  h-1/2 sm:h-screen sm:absolure " >
                     <motion.div   initial={{ opacity: 0, y: 2 }}  whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay:0.5 } }} className='py-14 sm:py-40 md:mt-40   text-white text-center text-3xl  '>
@@ -206,9 +206,9 @@ export default function Pageconter(params) {
                             </div>
                         </div>
                         <ol type="A" className='mt-8  block px-16'>
-                            <a className='block'> A. <span className='underline'>46 rue Caulaincourt 75018 Paris</span></a>
-                            <a className='block'> T. <span className='underline'>01 42 55 14 25</span></a>
-                            <a className='block'> E. <span className='underline'>mastino.paris@gmail.com</span></a>
+                            <NavLink to="/" className='block'> A. <span className='underline'>46 rue Caulaincourt 75018 Paris</span></NavLink>
+                            <NavLink to="/" className='block'> T. <span className='underline'>01 42 55 14 25</span></NavLink>
+                            <NavLink to="/" className='block'> E. <span className='underline'>mastino.paris@gmail.com</span></NavLink>
                         </ol>
                         <div className='w-full  h-40 py-6 text-center mt-10'>
                             <motion.h1  initial={{ opacity: 0, y: 40 }}  whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay:0.1 } }}lassName='text-2xl italic'>Menu</motion.h1>
