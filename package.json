@@ -1,8 +1,6 @@
 {
   "homepage": "https://subhanashraf.github.io/Fabbrica-website",
-  "name": "fabbrica",
-  "version": "0.1.0",
-  "private": true,
+  "name": "Fabbrica",
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.17.0",
