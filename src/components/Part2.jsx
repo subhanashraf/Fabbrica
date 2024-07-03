@@ -143,7 +143,7 @@ export default function Part2() {
             mousehover(textanimation, image1, image2, image3, a, b, c, paraoneSpans, paratwoSpans, top, left)
         })
         textanimation.addEventListener('click', () => {
-            navigate('./Montmartre')
+            navigate('/Montmartre')
         });
 
         textanimation.addEventListener('mouseleave', () => {
@@ -179,7 +179,7 @@ export default function Part2() {
 
         });
         textanimation.addEventListener('click', () => {
-            navigate('./Ternes')
+            navigate('/Ternes')
         });
 
         textanimation.addEventListener('mouseleave', () => {
@@ -213,7 +213,7 @@ export default function Part2() {
             mousehover(textanimation, image1, image2, image3,a, b,c, paraoneSpans, paratwoSpans, top, left)
         });
         textanimation.addEventListener('click', () => {
-            navigate('./Saint-Georges')
+            navigate(/Saint-Georges')
         });
 
         textanimation.addEventListener('mouseleave', () => {
